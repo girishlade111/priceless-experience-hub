@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --mc-canvas: #F3F0EE;
+    --mc-lifted: #FCFBFA;
+    --mc-ink: #141413;
+    --mc-signal-orange: #CF4500;
+    --mc-light-orange: #F37338;
+    --mc-clay-brown: #9A3A0A;
+    --mc-white: #FFFFFF;
+    --mc-slate-gray: #696969;
+    --mc-dust-taupe: #D1CDC7;
+    --mc-red: #EB001B;
+    --mc-yellow: #F79E1B;
+  }
+
+  body {
+    font-family: 'Sofia Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-weight: 450;
+    background-color: var(--mc-canvas);
+    color: var(--mc-ink);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sofia Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom Typography Utilities */
+.tracking-tight-mc {
+  letter-spacing: -0.02em;
+}
+
+.tracking-eyebrow {
+  letter-spacing: 0.04em;
+}
+
+.font-mc-body {
+  font-weight: 450;
+}
+
+/* Mastercard Elevation Shadows */
+.shadow-mc-nav {
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 24px 0px;
+}
+
+.shadow-mc-card {
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 24px 48px 0px;
+}
+
+.shadow-mc-high {
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 40px 80px 0px;
+}
+
+/* Orbital animation */
+@keyframes floatArc {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(0.5deg);
+  }
+}
+
+.animate-orbital {
+  animation: floatArc 8s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.02); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F3F0EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #D1CDC7;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9A3A0A;
+}

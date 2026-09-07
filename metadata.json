@@ -1,0 +1,6 @@
+{
+  "name": "Priceless Experience Hub",
+  "description": "An editorial financial innovation showcase built on Mastercard's signature orbit and pill design system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
