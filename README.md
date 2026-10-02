@@ -315,3 +315,8 @@ For questions, issues, or contributions:
 ---
 
 **Built with ❤️ for the future of financial innovation**
+---
+
+## Built by
+
+Built by Girish Lade — [ladestack.in](https://ladestack.in)
